@@ -16,7 +16,7 @@ Using `cargo` (a `shell.nix` is provided for Nix users):
 
 ```sh
 # will install to ~/.cargo/bin/openbox-command-palette
-cargo install --git https://github.com/ZaneA/openbox-command-palette
+$ cargo install --git https://github.com/ZaneA/openbox-command-palette
 ```
 
 # Usage
@@ -24,13 +24,14 @@ cargo install --git https://github.com/ZaneA/openbox-command-palette
 ## Basic usage
 
 ```sh
-# Usage: openbox-command-palette <path to wrapper> <path to openbox menu.xml or pipe menu command>
+$ openbox-command-palette
+Usage: openbox-command-palette <path to wrapper> <path to openbox menu.xml or pipe menu command>
 ```
 
 For example:
 
 ```sh
-# openbox-command-palette wrapper.sh ~/.config/openbox/menu.xml
+$ openbox-command-palette wrapper.sh ~/.config/openbox/menu.xml
 terminal                                     # xterm
 files                                        # thunar
 a pipemenu                                   # wrapper.sh "pipemenu-script"
